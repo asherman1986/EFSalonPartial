@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMaster.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Essentially Flawless - Tara Elle Artistry</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="Styles/Master.css" />
+    <script src="Scripts/jquery-2.1.4.js"></script>
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/navigation.js"></script>
+    <script src="Scripts/jquery.easing.1.3.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajaxSetup({ cache: true });
+            $.getScript('//connect.facebook.net/en_US/sdk.js', function () {
+                FB.init({
+                    appId: '{your-app-id}',
+                    version: 'v2.3' // or v2.0, v2.1, v2.0
+                });
+                $('#loginbutton,#feedbutton').removeAttr('disabled');
+                FB.getLoginStatus(updateStatusCallback);
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+        });
+    </script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+        <title><asp:Literal ID="ltrTitle" runat="server" /></title>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <form id="form1" runat="server">
+        <div id="Head">
+            <img class="logo" src="Images/SiteImages/logo_warm.png" alt="Essentially Flawless Logo" />
+            <div class="schedule">
+                Schedule Today!<br />
+                (281) 475 - 0510
+            </div>
+            <span class="title">
+                Make Up Artistry 
+                <img src="Images/SiteImages/flowerspacer1.png" alt="" /> 
+                Hair & Beauty Supply
+                <img src="Images/SiteImages/flowerspacer2.png" alt="" /> 
+                Expert Coloring 
+                <img src="Images/SiteImages/flowerspacer3.png" alt="" /> Hairpieces & Extensions</span>
+        </div>
+        
+        <div id="Nav">
+            <ul class="navMenu">
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="#">Products & Services</a></li>
+                <li><a href="Portfolio.aspx">Portfolio</a></li>
+                <li><a href="About.aspx">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="Main">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="Foot">
+            <div id="FootNav">
+                <ul class="footNav">
+                    <li>6935 FM 1960 Rd West<br />Suite 3 Houston TX 77069<br />(281) 475 - 0510</li>
+                    <li><a href="Default.aspx">Home</a></li>
+                    <li><a href="#">Products & Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/BeautyByTara83"><img src="Images/SiteImages/fblogo_med.png" alt="Like us on Facebook!" /></a>
+                <div class="fb-like" data-href="http://www.tara-elle-artistry.com" data-width="200" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+            </div>
+            
+        </div>
+        <div id="FootBottom">
+            <img class="logo" src="Images/SiteImages/logo_BW.png" /><br /><br />
+            Copyright &copy 2015  Tara Elle Artistry
+        </div>
+    </form>
+</body>
+</html>
