@@ -1,0 +1,158 @@
+﻿#Gallery {
+    width: 100%;
+    border: 1px solid lime;
+    position: relative;
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+}
+
+    #Gallery .categories {
+        width: 100%;
+        height: 3%;
+        background: rgb(255,255,255); /* Old browsers */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMyJSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkNWQyY2QiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 32%, rgba(213,210,205,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(32%,rgba(246,246,246,1)), color-stop(100%,rgba(213,210,205,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 32%,rgba(213,210,205,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 32%,rgba(213,210,205,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 32%,rgba(213,210,205,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 32%,rgba(213,210,205,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d5d2cd',GradientType=0 ); /* IE6-8 */
+    }
+
+        #Gallery .categories ul {
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+            #Gallery .categories ul li {
+                display: block;
+                float: left;
+                margin-right: 30px;
+                width: 200px;
+            }
+                #Gallery .categories ul li a {
+                    display: inline-block;
+                    margin-top: 4px;
+                    text-decoration: none;
+                    color: #89847b;
+                    transition: all 0.25s ease-in-out;
+                    font-family: Ebrima, Corbel, Gadugi, Calibri, sans-serif;
+                    text-transform: uppercase;
+                    font-size: .75em;
+                    letter-spacing: 3px;
+                }
+                    #Gallery .categories ul li a:hover {
+                        color: #fff;
+                        text-shadow: 0px 0px 10px #000;
+                    }
+    #Gallery .thumbWindow {
+        width: 100%;
+        height: 80px;
+        box-shadow: 0px 0px 15px 0px #d5d2cd inset;
+        overflow: hidden;
+        position: relative;
+        background: transparent url('../Images/SiteImages/ricepaper.png') repeat;
+    }
+        #Gallery .thumbWindow .reel {
+            width: 9999px;
+            height: 100%;
+            background: transparent;
+            position: absolute;
+            left: 0;
+        }
+
+            #Gallery .thumbWindow .reel img {
+                margin: 10px;
+                opacity: .5;
+                transition: all 0.5s ease-in-out;
+                cursor: pointer;
+                width: 70px;
+            }
+
+
+    #Gallery .mainWindow {
+        width: 100%;
+        height: 500px;
+        box-shadow: 0px 0px 15px 0px #d5d2cd inset;
+        display: block;
+        position: relative;
+    }
+    #Gallery .mainWindow .navLeft {
+            background: transparent url('../Images/SiteImages/navLeft.png') no-repeat center left;
+            background-size: contain;
+            width: 30px;
+            height: 80%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-left: 5px;
+            opacity: .5;
+            transition: opacity .5s ease-in-out;
+            cursor: pointer;
+        }
+            #Gallery .mainWindow .navLeft:hover {
+                opacity: 1;
+            }
+        #Gallery .mainWindow .navRight {
+            background: transparent url('../Images/SiteImages/navRight.png') no-repeat center left;
+            background-size: contain;
+            width: 30px;
+            height: 80%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-left: 5px;
+            opacity: .5;
+            transition: opacity .5s ease-in-out;
+            cursor: pointer;
+        }
+            #Gallery .mainWindow .navRight:hover {
+                opacity: 1;
+            }
+
+        #Gallery .mainWindow .image {
+            width: 90%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+            #Gallery .mainWindow .image img {
+                height: 90%;
+                display: block;
+                margin: 0 auto;
+                padding-top: 25px;
+            }
+
+            #Gallery .mainWindow .image .caption {
+                position: absolute;
+                display: block;
+                text-align: left;
+                width: 20%;
+                top: 50%;
+                right: 5%;
+                padding: 5px;
+                font-size: .8em;
+                font-family: Verdana, Tahoma, sans-serif;
+                color: #fff;
+                border: 1px solid black;
+                background: black url('../Images/SiteImages/bgTile_black25.png') repeat;
+                opacity: .25;
+                transition: opacity .5s ease-in-out;
+            }
+                #Gallery .mainWindow .image .caption:hover {
+                    opacity: 1;
+                }
+        
+
+.active {
+     -webkit-box-shadow: 0px 0px 10px 0px #89847b;
+     -moz-box-shadow: 0px 0px 10px 0px #89847b;
+     box-shadow: 0px 0px 10px 0px #89847b;
+}
+
+.inactive {
+    opacity: .5;
+}

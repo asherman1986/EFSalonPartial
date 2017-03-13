@@ -1,0 +1,157 @@
+﻿html {
+    margin:0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#Top {
+    display: block;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    padding: 0;
+    background: rgb(222,239,255); /* Old browsers */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+    background: rgb(255,255,255); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-8 */
+
+}
+
+    #Top .logo {
+        text-align:center;
+        height:150px;
+        display:block;
+        position:relative;
+        margin:0 auto;
+        padding: 25px;
+    }
+
+#Top .title {
+    width: 50%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-family: "Century Gothic", Ebrima, Calibri, sans-serif;
+    font-size: 1.25em;
+    color: rgb(5, 110, 209);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#Login {
+    margin: 50px auto;
+    height: 140px;
+    width: 300px;
+    background: transparent url('../Images/SiteImages/bgTile_sky25.png') repeat;
+    border: 1px solid rgb(0, 131, 255);
+    border-radius:5px;
+    padding-top: 20px;
+}
+
+#Reset {
+    width: 400px;
+    height: 120px;
+    margin: 0 auto;
+    background: rgb(222,239,255);
+    border: 1px solid rgb(0, 131, 255);
+    border-radius: 5px;
+    display: none;
+}
+
+.label {
+    display: inline-block;
+    font-size: .75em;
+    font-family: Verdana, Tahoma, Arial, sans-serif;
+    color: rgb(5, 110, 209);
+    padding: 15px;
+    padding-bottom: 0;
+    width: 75px;
+}
+.label2 {
+    display: inline-block;
+    font-size: .75em;
+    font-family: Verdana, Tahoma, Arial, sans-serif;
+    color: rgb(5, 110, 209);
+    padding: 15px;
+    padding-bottom: 0;
+}
+.input {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.input2 {
+    display: inline-block;
+    width: 75px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.button {
+    background: rgb(117, 188, 255);
+    border: 1px solid rgb(5, 110, 209);
+    font-family: Verdana, Tahoma, Arial, sans-serif;
+    font-size: .75em;
+    color: rgb(5, 110, 209);
+    display: block;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.linkButton {
+    text-decoration: none;
+    font-family: Verdana, Tahoma, Arial, sans-serif;
+    font-size: .6em;
+    color: rgb(0, 131, 255);
+    display: block;
+    float: right;
+    margin: 10px;
+    margin-right: 20px;
+    clear: both;
+}
+
+.linkButton2 {
+    text-decoration: none;
+    font-family: Verdana, Tahoma, Arial, sans-serif;
+    font-size: .6em;
+    color: rgb(0, 131, 255);
+    display: inline-block;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.error {
+    display: block;
+    width: 300px;
+    height: 25px;
+    background: rgb(255, 171, 171);
+    border: 1px solid red;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 5px;
+    padding-top: 8px;
+    font-family: Calibri, sans-serif;
+    font-size: .9em;
+    text-align: center;
+    color: rgb(165, 0, 0);
+
+}
+
+.progress {
+    margin: 5px;
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+}
